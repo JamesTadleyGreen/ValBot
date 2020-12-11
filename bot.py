@@ -26,7 +26,7 @@ async def hello_world(ctx):
     await ctx.send(response)
 
 @bot.command(name='howisjamie', help='Finds out how Jamie is')
-async def hello_world(ctx):
+async def how_is_jamie(ctx):
     quotes = [
         'Bad, very bad',
         'About to quit'

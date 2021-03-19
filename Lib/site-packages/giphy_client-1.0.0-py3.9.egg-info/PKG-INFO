@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: giphy-client
+Version: 1.0.0
+Summary: giphy-api
+Home-page: https://github.com/Giphy/giphy-python-client
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MPLv2
+Description:     Giphy&#39;s public api.
+            
+Keywords: Swagger,giphy-api
+Platform: UNKNOWN

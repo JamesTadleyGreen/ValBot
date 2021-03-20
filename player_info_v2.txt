@@ -1,0 +1,10 @@
+{
+    "status": "200",
+    "data": {
+        "currenttier": 12,
+        "currenttierpatched": "Gold 1",
+        "ranking_in_tier": 27,
+        "mmr_change_to_last_game": 22,
+        "elo": 927
+    }
+}

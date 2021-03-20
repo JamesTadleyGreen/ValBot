@@ -1,0 +1,463 @@
+{
+    "status": "200",
+    "data": {
+        "current_data": {
+            "currenttier": 12,
+            "currenttierpatched": "Gold 1",
+            "ranking_in_tier": 27,
+            "mmr_change_to_last_game": 22,
+            "elo": 927,
+            "games_needed_for_rating": 0
+        },
+        "by_season": {
+            "e2a2": {
+                "wins": 1,
+                "number_of_games": 7,
+                "final_rank": 12,
+                "final_rank_patched": "Gold 1",
+                "act_rank_wins": [
+                    {
+                        "patched_tier": "Gold 2",
+                        "tier": 13
+                    },
+                    {
+                        "patched_tier": "Gold 2",
+                        "tier": 13
+                    },
+                    {
+                        "patched_tier": "Gold 2",
+                        "tier": 13
+                    },
+                    {
+                        "patched_tier": "Gold 2",
+                        "tier": 13
+                    },
+                    {
+                        "patched_tier": "Gold 2",
+                        "tier": 13
+                    },
+                    {
+                        "patched_tier": "Gold 2",
+                        "tier": 13
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Silver 3",
+                        "tier": 11
+                    },
+                    {
+                        "patched_tier": "Silver 3",
+                        "tier": 11
+                    },
+                    {
+                        "patched_tier": "Silver 3",
+                        "tier": 11
+                    },
+                    {
+                        "patched_tier": "Silver 3",
+                        "tier": 11
+                    },
+                    {
+                        "patched_tier": "Silver 2",
+                        "tier": 10
+                    },
+                    {
+                        "patched_tier": "Silver 2",
+                        "tier": 10
+                    },
+                    {
+                        "patched_tier": "Silver 2",
+                        "tier": 10
+                    },
+                    {
+                        "patched_tier": "Silver 2",
+                        "tier": 10
+                    }
+                ]
+            },
+            "e2a1": {
+                "wins": 25,
+                "number_of_games": 53,
+                "final_rank": 13,
+                "final_rank_patched": "Gold 2",
+                "act_rank_wins": [
+                    {
+                        "patched_tier": "Gold 2",
+                        "tier": 13
+                    },
+                    {
+                        "patched_tier": "Gold 2",
+                        "tier": 13
+                    },
+                    {
+                        "patched_tier": "Gold 2",
+                        "tier": 13
+                    },
+                    {
+                        "patched_tier": "Gold 2",
+                        "tier": 13
+                    },
+                    {
+                        "patched_tier": "Gold 2",
+                        "tier": 13
+                    },
+                    {
+                        "patched_tier": "Gold 2",
+                        "tier": 13
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Silver 3",
+                        "tier": 11
+                    },
+                    {
+                        "patched_tier": "Silver 3",
+                        "tier": 11
+                    },
+                    {
+                        "patched_tier": "Silver 3",
+                        "tier": 11
+                    },
+                    {
+                        "patched_tier": "Silver 3",
+                        "tier": 11
+                    },
+                    {
+                        "patched_tier": "Silver 2",
+                        "tier": 10
+                    },
+                    {
+                        "patched_tier": "Silver 2",
+                        "tier": 10
+                    },
+                    {
+                        "patched_tier": "Silver 2",
+                        "tier": 10
+                    },
+                    {
+                        "patched_tier": "Silver 2",
+                        "tier": 10
+                    }
+                ]
+            },
+            "e1a3": {
+                "wins": 13,
+                "number_of_games": 37,
+                "final_rank": 13,
+                "final_rank_patched": "Gold 2",
+                "act_rank_wins": [
+                    {
+                        "patched_tier": "Gold 2",
+                        "tier": 13
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Silver 3",
+                        "tier": 11
+                    },
+                    {
+                        "patched_tier": "Silver 3",
+                        "tier": 11
+                    },
+                    {
+                        "patched_tier": "Silver 3",
+                        "tier": 11
+                    },
+                    {
+                        "patched_tier": "Silver 3",
+                        "tier": 11
+                    }
+                ]
+            },
+            "e1a2": {
+                "wins": 29,
+                "number_of_games": 58,
+                "final_rank": 0,
+                "final_rank_patched": "Unrated",
+                "act_rank_wins": [
+                    {
+                        "patched_tier": "Gold 3",
+                        "tier": 14
+                    },
+                    {
+                        "patched_tier": "Gold 3",
+                        "tier": 14
+                    },
+                    {
+                        "patched_tier": "Gold 2",
+                        "tier": 13
+                    },
+                    {
+                        "patched_tier": "Gold 2",
+                        "tier": 13
+                    },
+                    {
+                        "patched_tier": "Gold 2",
+                        "tier": 13
+                    },
+                    {
+                        "patched_tier": "Gold 2",
+                        "tier": 13
+                    },
+                    {
+                        "patched_tier": "Gold 2",
+                        "tier": 13
+                    },
+                    {
+                        "patched_tier": "Gold 2",
+                        "tier": 13
+                    },
+                    {
+                        "patched_tier": "Gold 2",
+                        "tier": 13
+                    },
+                    {
+                        "patched_tier": "Gold 2",
+                        "tier": 13
+                    },
+                    {
+                        "patched_tier": "Gold 2",
+                        "tier": 13
+                    },
+                    {
+                        "patched_tier": "Gold 2",
+                        "tier": 13
+                    },
+                    {
+                        "patched_tier": "Gold 2",
+                        "tier": 13
+                    },
+                    {
+                        "patched_tier": "Gold 2",
+                        "tier": 13
+                    },
+                    {
+                        "patched_tier": "Gold 2",
+                        "tier": 13
+                    },
+                    {
+                        "patched_tier": "Gold 2",
+                        "tier": 13
+                    },
+                    {
+                        "patched_tier": "Gold 2",
+                        "tier": 13
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Silver 3",
+                        "tier": 11
+                    },
+                    {
+                        "patched_tier": "Silver 3",
+                        "tier": 11
+                    }
+                ]
+            },
+            "e1a1": {
+                "wins": 10,
+                "number_of_games": 29,
+                "final_rank": 11,
+                "final_rank_patched": "Silver 3",
+                "act_rank_wins": [
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Gold 1",
+                        "tier": 12
+                    },
+                    {
+                        "patched_tier": "Silver 3",
+                        "tier": 11
+                    },
+                    {
+                        "patched_tier": "Silver 3",
+                        "tier": 11
+                    },
+                    {
+                        "patched_tier": "Silver 3",
+                        "tier": 11
+                    },
+                    {
+                        "patched_tier": "Silver 3",
+                        "tier": 11
+                    },
+                    {
+                        "patched_tier": "Silver 3",
+                        "tier": 11
+                    },
+                    {
+                        "patched_tier": "Silver 3",
+                        "tier": 11
+                    },
+                    {
+                        "patched_tier": "Silver 2",
+                        "tier": 10
+                    }
+                ]
+            }
+        }
+    }
+}

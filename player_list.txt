@@ -1,7 +1,74 @@
-Chicken#80085
-KimJong#42069
-EpicVipa#EUW
-Chicken#7724
-DawnOfTheLiving#EUW
-SUGAH WURM#8630
-Chgrlie#1128
+{
+    "players": [
+        {
+            "name": "Chicken",
+            "tag": "80085",
+            "nickname": "Chicken#80085",
+            "rank_data": {
+                "currenttier": 12,
+                "currenttierpatched": "Gold 1",
+                "ranking_in_tier": 27,
+                "mmr_change_to_last_game": 22,
+                "elo": 927,
+                "games_needed_for_rating": 0
+            },
+            "last_online": "2021-03-20 18:25:37"
+        },
+        {
+            "name": "KimJong",
+            "tag": "42069",
+            "nickname": "KimJong#42069",
+            "rank_data": {
+                "currenttier": 9,
+                "currenttierpatched": "Silver 1",
+                "ranking_in_tier": 34,
+                "mmr_change_to_last_game": -16,
+                "elo": 634,
+                "games_needed_for_rating": 0
+            },
+            "last_online": "2021-03-19 22:38:32"
+        },
+        {
+            "name": "EpicVipa",
+            "tag": "EUW",
+            "nickname": "EpicVipa#EUW",
+            "rank_data": {
+                "currenttier": 13,
+                "currenttierpatched": "Gold 2",
+                "ranking_in_tier": 44,
+                "mmr_change_to_last_game": 20,
+                "elo": 1044,
+                "games_needed_for_rating": 0
+            },
+            "last_online": "2021-03-20 18:25:37"
+        },
+        {
+            "name": "Chicken",
+            "tag": "7724",
+            "nickname": "Chicken#7724",
+            "rank_data": {
+                "currenttier": 12,
+                "currenttierpatched": "Gold 1",
+                "ranking_in_tier": 0,
+                "mmr_change_to_last_game": -19,
+                "elo": 900,
+                "games_needed_for_rating": 0
+            },
+            "last_online": "2021-03-20 17:33:29"
+        },
+        {
+            "name": "DawnOfTheLiving",
+            "tag": "EUW",
+            "nickname": "DawnOfTheLiving#EUW",
+            "rank_data": {
+                "currenttier": 9,
+                "currenttierpatched": "Silver 1",
+                "ranking_in_tier": 94,
+                "mmr_change_to_last_game": 16,
+                "elo": 694,
+                "games_needed_for_rating": 0
+            },
+            "last_online": "2021-03-20 15:15:14"
+        }
+    ]
+}

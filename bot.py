@@ -34,12 +34,24 @@ async def rm_players(ctx, player):
     response = api.remove_player_from_list(player)
     await ctx.send(response)
 
+@bot.command(name='update', help='Updates the stored stats')
+async def update(ctx):
+    await ctx.send(api.update_players_info())
+
 @bot.command(name='val_players', help='Finds out last time people were online')
 async def val_players(ctx):
-    player_list = api.check_last_onlines()
-    embedVar = discord.Embed(title="Players most recent game.", description="The last time we saw the following players.", color=0x00ff00)
-    for player in player_list:
-        embedVar.add_field(name=player.split("|")[0], value=player.split("|")[1], inline=False)
+    #print(api.update_players_info())
+    embedVar = discord.Embed(title="Most recent game.", description="The last time we saw the following players. :clock10:", color=0x00ff00)
+    for player in api.get_player_list()['players']:
+        embedVar.add_field(name=player["name"], value=player["last_online"], inline=False)
+    await ctx.send(embed=embedVar)
+
+@bot.command(name='ranks', help='Finds out the latest ranks')
+async def ranks(ctx):
+    #print(api.update_players_info())
+    embedVar = discord.Embed(title="Ranks.", description="The current ranks of players.", color=0x00ff00)
+    for player in api.get_player_list()['players']:
+        embedVar.add_field(name=player['name'], value=f"{player['rank_data']['currenttierpatched']} - {api.rank_emoji(player['rank_data']['currenttierpatched'])}", inline=False)
     await ctx.send(embed=embedVar)
 
 @bot.command(name='adam', help='Finds out how many kills adam got in the last game')

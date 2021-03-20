@@ -1,0 +1,9 @@
+{
+    "Iron": ":black_circle:",
+    "Bronze": ":brown_circle:",
+    "Silver": ":white_circle:",
+    "Gold": ":yellow_circle:",
+    "Diamond": ":blue_circle:",
+    "Immortal": ":purple_circle:",
+    "Radiant": ":white_circle:"
+}

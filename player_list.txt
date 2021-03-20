@@ -3,7 +3,7 @@
         {
             "name": "Chicken",
             "tag": "80085",
-            "nickname": "Chicken#80085",
+            "nickname": "JamOnToast",
             "rank_data": {
                 "currenttier": 12,
                 "currenttierpatched": "Gold 1",

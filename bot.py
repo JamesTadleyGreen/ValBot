@@ -46,6 +46,10 @@ async def val_players(ctx):
         embedVar.add_field(name=player["name"], value=player["last_online"], inline=False)
     await ctx.send(embed=embedVar)
 
+@bot.command(name='nickname', help='Updates the nickname for a player')
+async def update(ctx, player, nickname):
+    await ctx.send(api.set_player_nickname(player, nickname))
+
 @bot.command(name='ranks', help='Finds out the latest ranks')
 async def ranks(ctx):
     #print(api.update_players_info())

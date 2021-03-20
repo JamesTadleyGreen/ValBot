@@ -16,13 +16,17 @@ def add_player_to_list(player: str):
     with open('player_list.txt', 'r+') as f:
         for line in f:
             if player == line[:-1]:
-                print("Player already in database (txt file lol [like the UK governement does]).")
+                return "Player already in database (txt file lol [like the UK governement uses])."
                 break
         else:
             f.write(f"{player}\n")
+            return "Done."
 
 def get_match_info(player):
-    name, tag = player.split('#')
+    try:
+        name, tag = player.split('#')
+    except ValueError:
+        return None
     url = f"{base}/valorant/v3/matches/eu/{name}/{tag}"
     try:
         response = requests.get(url)
@@ -35,7 +39,10 @@ def get_match_info(player):
     return response
 
 def check_last_online(player):
-    response = get_match_info(player).json()
+    try:
+        response = get_match_info(player).json()
+    except AttributeError:
+        return None
     with open('tmp.txt', 'r+') as f: 
         metadata = response['data']['matchres'][0]['metadata']
         game_start, game_length = metadata['game_start'], metadata['game_length']
@@ -43,7 +50,7 @@ def check_last_online(player):
         return datetime.fromtimestamp(game_end, timezone.utc).strftime('%Y-%m-%d %H:%M:%S')
 
 def check_last_onlines():
-    return [f"{player}: {check_last_online(player)}" for player in get_player_list()]
+    return [f"{player}|{check_last_online(player)}" for player in get_player_list()]
 
 
 

@@ -43,7 +43,7 @@ async def val_players(ctx):
     #print(api.update_players_info())
     embedVar = discord.Embed(title="Most recent game.", description="The last time we saw the following players. :clock10:", color=0x00ff00)
     for player in api.get_player_list()['players']:
-        embedVar.add_field(name=player["name"], value=player["last_online"], inline=False)
+        embedVar.add_field(name=player["nickname"], value=player["last_online"], inline=False)
     await ctx.send(embed=embedVar)
 
 @bot.command(name='nickname', help='Updates the nickname for a player')
@@ -55,7 +55,7 @@ async def ranks(ctx):
     #print(api.update_players_info())
     embedVar = discord.Embed(title="Ranks.", description="The current ranks of players.", color=0x00ff00)
     for player in api.get_player_list()['players']:
-        embedVar.add_field(name=player['name'], value=f"{player['rank_data']['currenttierpatched']} - {api.rank_emoji(player['rank_data']['currenttierpatched'])}", inline=False)
+        embedVar.add_field(name=player['nickname'], value=f"{player['rank_data']['currenttierpatched']} - {api.rank_emoji(player['rank_data']['currenttierpatched'])}", inline=False)
     await ctx.send(embed=embedVar)
 
 @bot.command(name='adam', help='Finds out how many kills adam got in the last game')

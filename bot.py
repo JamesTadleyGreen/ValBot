@@ -28,6 +28,12 @@ async def add_players(ctx, player):
     response = api.add_player_to_list(player)
     await ctx.send(response)
 
+@bot.command(name='remove_player', help='Removes an existing player from the database')
+@commands.has_role('Mod')
+async def rm_players(ctx, player):
+    response = api.remove_player_from_list(player)
+    await ctx.send(response)
+
 @bot.command(name='val_players', help='Finds out last time people were online')
 async def val_players(ctx):
     player_list = api.check_last_onlines()

@@ -22,6 +22,19 @@ def add_player_to_list(player: str):
             f.write(f"{player}\n")
             return "Done."
 
+def remove_player_from_list(player: str):
+    with open("player_list.txt", "r+") as f:
+        d = f.readlines()
+        if player+"\n" not in d:
+            return "Player not in database"
+        f.seek(0)
+        for i in d:
+            if i.strip('\n') != player:
+                f.write(i)
+        f.truncate()
+    return "Done."
+
+
 def get_match_info(player):
     try:
         name, tag = player.split('#')
@@ -34,6 +47,7 @@ def get_match_info(player):
         response.raise_for_status()
     except HTTPError as http_err:
         print(f'HTTP error occurred: {http_err}')  # Python 3.6
+        return "ERROR: Too many requests."
     except Exception as err:
         print(f'Other error occurred: {err}')  # Python 3.6
     return response
@@ -42,7 +56,7 @@ def check_last_online(player):
     try:
         response = get_match_info(player).json()
     except AttributeError:
-        return None
+        return "ERROR: Too many requests."
     with open('tmp.txt', 'r+') as f: 
         metadata = response['data']['matchres'][0]['metadata']
         game_start, game_length = metadata['game_start'], metadata['game_length']
@@ -51,10 +65,3 @@ def check_last_online(player):
 
 def check_last_onlines():
     return [f"{player}|{check_last_online(player)}" for player in get_player_list()]
-
-
-
-# #print(get_match_info('Chicken#7724').content)
-# print(check_last_onlines())
-# # 1616176949766
-# # 2239902

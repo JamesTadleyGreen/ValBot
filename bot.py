@@ -81,6 +81,6 @@ async def on_command_error(ctx, error):
     if isinstance(error, commands.errors.CheckFailure):
         await ctx.send('You do not have the correct role for this command.')
     if isinstance(error, commands.CommandNotFound):
-        await ctx.send("Not a command mate")
+        await ctx.send("Not a command *mate*.")
 
 bot.run(TOKEN)

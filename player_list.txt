@@ -7,7 +7,7 @@
             "rank_data": {
                 "currenttier": 12,
                 "currenttierpatched": "Gold 1",
-                "ranking_in_tier": 27,
+                "ranking_in_tier": 1,
                 "mmr_change_to_last_game": 22,
                 "elo": 927,
                 "games_needed_for_rating": 0

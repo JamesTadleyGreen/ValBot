@@ -54,8 +54,16 @@ async def update(ctx, player, nickname):
 async def ranks(ctx):
     #print(api.update_players_info())
     embedVar = discord.Embed(title="Ranks.", description="The current ranks of players.", color=0x00ff00)
-    for player in api.get_player_list()['players']:
+    for player in sorted(api.get_player_list()['players'], key=lambda x: x['rank_data']['elo'], reverse=True):
         embedVar.add_field(name=player['nickname'], value=f"{player['rank_data']['currenttierpatched']} - {api.rank_emoji(player['rank_data']['currenttierpatched'])}", inline=False)
+    await ctx.send(embed=embedVar)
+
+@bot.command(name='rank_prog', help='Progression within ranks')
+async def ranks(ctx):
+    #print(api.update_players_info())
+    embedVar = discord.Embed(title="Ranks.", description="The current ranks of players.", color=0x00ff00)
+    for player in sorted(api.get_player_list()['players'], key=lambda x: x['rank_data']['elo'], reverse=True):
+        embedVar.add_field(name=f"{player['nickname']} {api.rank_emoji(player['rank_data']['currenttierpatched'])}", value=f"{api.rank_prog_emoji(player['rank_data']['ranking_in_tier'])}", inline=False)
     await ctx.send(embed=embedVar)
 
 @bot.command(name='adam', help='Finds out how many kills adam got in the last game')

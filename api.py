@@ -101,6 +101,13 @@ def rank_emoji(rank_num):
         json_data = json.load(f)
         return json_data[rank]*int(number)
 
+def rank_prog_emoji(prog_in_tier: int):
+    if prog_in_tier == 0:
+        return ":poop:"
+    if prog_in_tier > 90:
+        return ":100:"
+    return ":green_heart:"*((prog_in_tier+5)//10) + ":black_heart:"*(10-(prog_in_tier+5)//10)
+
 def update_players_info():
     print("Updating info")
     with open('player_list.txt', 'r+') as f:
@@ -147,3 +154,9 @@ def DEV_output_to_file(func, file, player):
 #     print(player["rank_data"]["currenttierpatched"])
 #     rank_emoji(player["rank_data"]["currenttierpatched"])
 #     print(player["name"], player["rank_data"]["currenttierpatched"] + rank_emoji(player["rank_data"]["currenttierpatched"]))
+
+for player in get_player_list()['players']:
+    print(player['rank_data']['elo'])
+
+for player in sorted(get_player_list()['players'], key=lambda x: x['rank_data']['elo'], reverse=True):
+    print(player['nickname'], f"{player['rank_data']['currenttierpatched']} - {rank_emoji(player['rank_data']['currenttierpatched'])}")

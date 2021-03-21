@@ -3,7 +3,8 @@
     "Bronze": ":brown_circle:",
     "Silver": ":white_circle:",
     "Gold": ":yellow_circle:",
-    "Diamond": ":blue_circle:",
-    "Immortal": ":purple_circle:",
+    "Platinum": ":blue_circle:",
+    "Diamond": ":purple_circle:",
+    "Immortal": ":red_circle:",
     "Radiant": ":white_circle:"
 }

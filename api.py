@@ -148,15 +148,3 @@ def DEV_output_to_file(func, file, player):
 # for player in old_player_list:
 #     add_player_to_list(player)
 # print(update_players_info())
-
-
-# for player in get_player_list()['players']:
-#     print(player["rank_data"]["currenttierpatched"])
-#     rank_emoji(player["rank_data"]["currenttierpatched"])
-#     print(player["name"], player["rank_data"]["currenttierpatched"] + rank_emoji(player["rank_data"]["currenttierpatched"]))
-
-for player in get_player_list()['players']:
-    print(player['rank_data']['elo'])
-
-for player in sorted(get_player_list()['players'], key=lambda x: x['rank_data']['elo'], reverse=True):
-    print(player['nickname'], f"{player['rank_data']['currenttierpatched']} - {rank_emoji(player['rank_data']['currenttierpatched'])}")

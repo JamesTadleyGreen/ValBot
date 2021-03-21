@@ -50,15 +50,7 @@ async def val_players(ctx):
 async def update(ctx, player, nickname):
     await ctx.send(api.set_player_nickname(player, nickname))
 
-@bot.command(name='ranks', help='Finds out the latest ranks')
-async def ranks(ctx):
-    #print(api.update_players_info())
-    embedVar = discord.Embed(title="Ranks.", description="The current ranks of players.", color=0x00ff00)
-    for player in sorted(api.get_player_list()['players'], key=lambda x: x['rank_data']['elo'], reverse=True):
-        embedVar.add_field(name=player['nickname'], value=f"{player['rank_data']['currenttierpatched']} - {api.rank_emoji(player['rank_data']['currenttierpatched'])}", inline=False)
-    await ctx.send(embed=embedVar)
-
-@bot.command(name='rank_prog', help='Progression within ranks')
+@bot.command(name='ranks', help='Progression within ranks')
 async def ranks(ctx):
     #print(api.update_players_info())
     embedVar = discord.Embed(title="Ranks.", description="The current ranks of players.", color=0x00ff00)
@@ -88,5 +80,7 @@ async def roll(ctx, number_of_dice=1, number_of_sides=6):
 async def on_command_error(ctx, error):
     if isinstance(error, commands.errors.CheckFailure):
         await ctx.send('You do not have the correct role for this command.')
+    if isinstance(error, commands.CommandNotFound):
+        await ctx.send("Not a command mate")
 
 bot.run(TOKEN)

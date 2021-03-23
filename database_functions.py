@@ -59,3 +59,5 @@ def update_players_info():
         f.seek(0)
         f.write(json.dumps(json_data, indent=4))
         return "Done."
+
+update_players_info()

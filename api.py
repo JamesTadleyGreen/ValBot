@@ -50,7 +50,7 @@ def get_player_rank(player):
 def check_last_online(player):
     try:
         response = get_match_info(player).json()
-    except AttributeError:
+    except json.decoder.JSONDecodeError:
         return None
     metadata = response['data']['matchres'][0]['metadata']
     game_start, game_length = metadata['game_start'], metadata['game_length']

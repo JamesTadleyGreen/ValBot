@@ -75,15 +75,16 @@ def last_to_die(match):
 
 
 def last_to_die_test():
-    with open('sample_comp_game.txt') as f:
+    with open('sample_comp_game.txt.txt') as f:
         data = json.load(f)
 
     # for match in data['data']['matchres']:
     #     print(last_to_die(match))
-    return last_to_die(data['data']['matchres'][0])
+    return data
 
 # for team in last_to_die_test().values():
 #     print(team)
 #     for player in team:
 #         print(player)
 #         print(f'{player["name"]}',f':scream_cat:: {player["pussy_score"]}\n:sloth:: {player["rotate_score"]}')
+#print(last_to_die_test())

@@ -36,6 +36,18 @@ async def rm_players(ctx, player):
     response = df.remove_player_from_list(player)
     await ctx.send(response)
 
+@bot.command(name='online', help="Checks if anyone's in game")
+async def update(ctx):
+    embedVar = discord.Embed(title="Who's online", description="", color=0x00ff00)
+    online_list = dm.get_online_players()
+    for player in online_list:
+        name, online = player
+        emoji = ":heart:"
+        if online:
+            emoji = ":green_heart:"
+        embedVar.add_field(name=name, value=emoji, inline=False)
+    await ctx.send(embed=embedVar)
+
 @bot.command(name='update', help='Updates the stored stats')
 async def update(ctx):
     await ctx.send(df.update_players_info())

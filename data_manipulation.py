@@ -1,4 +1,5 @@
 import json
+import api
 
 def get_player_list():
     with open('player_list.txt') as f:
@@ -72,6 +73,13 @@ def last_to_die(match):
     d['Red'].sort(key=lambda p : p['pussy_score']+p['rotate_score'], reverse=True)
     d['Blue'].sort(key=lambda p : p['pussy_score']+p['rotate_score'], reverse=True)
     return d
+
+def get_online_players():
+    online = []
+    for player in get_player_list()['players']:
+        online.append((f"{player['name']}#{player['tag']}", api.get_live_info(f"{player['name']}#{player['tag']}")))
+    return online
+
 
 
 def last_to_die_test():

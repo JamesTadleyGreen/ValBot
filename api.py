@@ -6,6 +6,17 @@ from datetime import datetime, timezone
 
 base = "https://api.henrikdev.xyz"
 
+def get_live_info(player):
+    try:
+        name, tag = player.split('#')
+    except ValueError:
+        return None
+    url = f"{base}/valorant/v1/live-match/{name}/{tag}"
+    response = requests.get(url)
+    if response.status_code == 200:
+        return True
+    return False
+
 
 def get_match_info(player):
     try:

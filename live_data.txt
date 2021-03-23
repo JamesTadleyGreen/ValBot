@@ -1,0 +1,4 @@
+{"status":"200","data":{"custom_game":false,"gamemode":"spikerush","current_state":"PREGAME","party_accessibility":"CLOSED","client_version":"release-02.05-shipping-4-533692","map":"Bind","score_ally_team":0,"score_enemy_team":0,"queue_entry_time":"2021.03.23-18.37.25","party_id":"28b20ead-95a7-4d92-b4d5-c5a757604740"}}
+{"status":"200","data":{"custom_game":false,"gamemode":"spikerush","current_state":"INGAME","party_accessibility":"CLOSED","client_version":"release-02.05-shipping-4-533692","map":"Bind","score_ally_team":2,"score_enemy_team":0,"queue_entry_time":"2021.03.23-18.37.25","party_id":"28b20ead-95a7-4d92-b4d5-c5a757604740"}}
+{"status":"200","data":{"current_selected_gamemode":"spikerush","current_state":"MENUS","party_accessibility":"CLOSED","client_version":"release-02.05-shipping-4-533692","party_size":1,"party_id":"28b20ead-95a7-4d92-b4d5-c5a757604740"}}
+{"status":"500","message":"User offline, can't track live game data"}

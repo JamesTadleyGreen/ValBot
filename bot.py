@@ -5,6 +5,8 @@ from dotenv import load_dotenv
 import discord
 
 import api
+import data_manipulation as dm
+import database_functions as df
 
 import giphy
 
@@ -25,38 +27,53 @@ async def on_ready():
 
 @bot.command(name='add_player', help='Adds a new player to check the stats with')
 async def add_players(ctx, player):
-    response = api.add_player_to_list(player)
+    response = df.add_player_to_list(player)
     await ctx.send(response)
 
 @bot.command(name='remove_player', help='Removes an existing player from the database')
 @commands.has_role('Mod')
 async def rm_players(ctx, player):
-    response = api.remove_player_from_list(player)
+    response = df.remove_player_from_list(player)
     await ctx.send(response)
 
 @bot.command(name='update', help='Updates the stored stats')
 async def update(ctx):
-    await ctx.send(api.update_players_info())
+    await ctx.send(df.update_players_info())
 
 @bot.command(name='val_players', help='Finds out last time people were online')
 async def val_players(ctx):
     #print(api.update_players_info())
     embedVar = discord.Embed(title="Most recent game.", description="The last time we saw the following players. :clock10:", color=0x00ff00)
-    for player in api.get_player_list()['players']:
+    for player in dm.get_player_list()['players']:
         embedVar.add_field(name=player["nickname"], value=player["last_online"], inline=False)
     await ctx.send(embed=embedVar)
 
 @bot.command(name='nickname', help='Updates the nickname for a player')
 async def update(ctx, player, nickname):
-    await ctx.send(api.set_player_nickname(player, nickname))
+    await ctx.send(df.set_player_nickname(player, nickname))
 
 @bot.command(name='ranks', help='Progression within ranks')
 async def ranks(ctx):
     #print(api.update_players_info())
     embedVar = discord.Embed(title="Ranks.", description="The current ranks of players.", color=0x00ff00)
-    for player in sorted(api.get_player_list()['players'], key=lambda x: x['rank_data']['elo'], reverse=True):
-        embedVar.add_field(name=f"{player['nickname']} {api.rank_emoji(player['rank_data']['currenttierpatched'])}", value=f"{api.rank_prog_emoji(player['rank_data']['ranking_in_tier'])}", inline=False)
+    for player in sorted(dm.get_player_list()['players'], key=lambda x: x['rank_data']['elo'], reverse=True):
+        embedVar.add_field(name=f"{player['nickname']} {dm.rank_emoji(player['rank_data']['currenttierpatched'])}", value=f"{dm.rank_prog_emoji(player['rank_data']['ranking_in_tier'])}", inline=False)
     await ctx.send(embed=embedVar)
+
+@bot.command(name='wimp', help='Progression within ranks')
+async def wimp(ctx, player):
+    #print(api.update_players_info())
+    embedVarRed = discord.Embed(title="Who's been wimpy today then.", description="Tells you who's been a little bitch on attack / defense.", color=0xff0000)
+    embedVarBlue = discord.Embed(title="Who's been wimpy today then.", description="Tells you who's been a little bitch on attack / defense.", color=0x0000ff)
+    print("Fetching match data")
+    match_data = api.get_match_info(player)
+    print("Got match data")
+    for player in dm.last_to_die(match_data[0])["Red"]:
+        embedVarRed.add_field(name=f'{player["name"]}', value=f':scream_cat:: {player["pussy_score"]}\t:sloth:: {player["rotate_score"]}', inline=False)
+    for player in dm.last_to_die(match_data[1])["Blue"]:
+        embedVarBlue.add_field(name=f'{player["name"]}', value=f':scream_cat:: {player["pussy_score"]}\t:sloth:: {player["rotate_score"]}', inline=False)
+    await ctx.send(embed=embedVarRed)
+    await ctx.send(embed=embedVarBlue)
 
 @bot.command(name='adam', help='Finds out how many kills adam got in the last game')
 async def val_players(ctx):

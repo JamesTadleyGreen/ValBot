@@ -7,12 +7,12 @@
             "rank_data": {
                 "currenttier": 12,
                 "currenttierpatched": "Gold 1",
-                "ranking_in_tier": 1,
-                "mmr_change_to_last_game": 22,
-                "elo": 927,
+                "ranking_in_tier": 30,
+                "mmr_change_to_last_game": 23,
+                "elo": 930,
                 "games_needed_for_rating": 0
             },
-            "last_online": "2021-03-20 18:25:37"
+            "last_online": "asdddsaads"
         },
         {
             "name": "KimJong",
@@ -21,12 +21,12 @@
             "rank_data": {
                 "currenttier": 9,
                 "currenttierpatched": "Silver 1",
-                "ranking_in_tier": 34,
-                "mmr_change_to_last_game": -16,
-                "elo": 634,
+                "ranking_in_tier": 50,
+                "mmr_change_to_last_game": 25,
+                "elo": 650,
                 "games_needed_for_rating": 0
             },
-            "last_online": "2021-03-19 22:38:32"
+            "last_online": null
         },
         {
             "name": "EpicVipa",
@@ -35,12 +35,12 @@
             "rank_data": {
                 "currenttier": 13,
                 "currenttierpatched": "Gold 2",
-                "ranking_in_tier": 44,
+                "ranking_in_tier": 40,
                 "mmr_change_to_last_game": 20,
-                "elo": 1044,
+                "elo": 1040,
                 "games_needed_for_rating": 0
             },
-            "last_online": "2021-03-20 18:25:37"
+            "last_online": null
         },
         {
             "name": "Chicken",
@@ -54,7 +54,7 @@
                 "elo": 900,
                 "games_needed_for_rating": 0
             },
-            "last_online": "2021-03-20 17:33:29"
+            "last_online": null
         },
         {
             "name": "DawnOfTheLiving",
@@ -63,12 +63,12 @@
             "rank_data": {
                 "currenttier": 9,
                 "currenttierpatched": "Silver 1",
-                "ranking_in_tier": 94,
-                "mmr_change_to_last_game": 16,
-                "elo": 694,
+                "ranking_in_tier": 12,
+                "mmr_change_to_last_game": -21,
+                "elo": 612,
                 "games_needed_for_rating": 0
             },
-            "last_online": "2021-03-20 15:15:14"
+            "last_online": null
         }
     ]
 }

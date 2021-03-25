@@ -77,7 +77,7 @@ def last_to_die(match):
 def get_online_players():
     online = []
     for player in get_player_list()['players']:
-        online.append((f"{player['name']}#{player['tag']}", api.get_live_info(f"{player['name']}#{player['tag']}")))
+        online.append((f"{player['name']}#{player['tag']}", api.get_online1(f"{player['name']}#{player['tag']}")))
     return online
 
 

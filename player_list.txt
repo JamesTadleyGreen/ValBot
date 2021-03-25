@@ -69,6 +69,13 @@
                 "games_needed_for_rating": 0
             },
             "last_online": null
+        },
+        {
+            "name": "SUGAH WURM",
+            "tag": "8630",
+            "nickname": "SUGAH WURM#8630",
+            "rank_data": {},
+            "last_online": null
         }
     ]
 }

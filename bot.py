@@ -78,9 +78,8 @@ async def wimp(ctx, player):
     embedVarRed = discord.Embed(title="Who's been wimpy today then.", description="Tells you who's been a little bitch on attack / defense.", color=0xff0000)
     embedVarBlue = discord.Embed(title="Who's been wimpy today then.", description="Tells you who's been a little bitch on attack / defense.", color=0x0000ff)
     print("Fetching match data")
-    match_data = api.get_match_info(player)['data']['matchres']
+    match_data = api.get_match_info(player).json()['data']['matchres']
     print("Got match data")
-    print(match_data[0])
     for player in dm.last_to_die(match_data[0])["Red"]:
         embedVarRed.add_field(name=f'{player["name"]}', value=f':scream_cat:: {player["pussy_score"]}\t:sloth:: {player["rotate_score"]}', inline=False)
     for player in dm.last_to_die(match_data[0])["Blue"]:

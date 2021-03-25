@@ -96,6 +96,3 @@ def last_to_die_test():
 #         print(player)
 #         print(f'{player["name"]}',f':scream_cat:: {player["pussy_score"]}\n:sloth:: {player["rotate_score"]}')
 #print(last_to_die_test())
-match = api.get_match_info("Chicken#80085").json()
-#print(match['data']['matchres'])
-print(last_to_die(match['data']['matchres'][0]))

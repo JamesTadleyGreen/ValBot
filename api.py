@@ -39,6 +39,7 @@ def get_match_info(player):
         response.raise_for_status()
     except HTTPError as http_err:
         print(f'HTTP error occurred: {http_err}')  # Python 3.6
+        return None
     except Exception as err:
         print(f'Other error occurred: {err}')  # Python 3.6
     return response
@@ -55,6 +56,7 @@ def get_player_info(player):
         response.raise_for_status()
     except HTTPError as http_err:
         print(f'HTTP error occurred: {http_err}')  # Python 3.6
+        return None
     except Exception as err:
         print(f'Other error occurred: {err}')  # Python 3.6
     return response

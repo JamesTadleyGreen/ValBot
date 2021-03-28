@@ -7,12 +7,12 @@
             "rank_data": {
                 "currenttier": 12,
                 "currenttierpatched": "Gold 1",
-                "ranking_in_tier": 30,
-                "mmr_change_to_last_game": 23,
-                "elo": 930,
+                "ranking_in_tier": 60,
+                "mmr_change_to_last_game": 19,
+                "elo": 960,
                 "games_needed_for_rating": 0
             },
-            "last_online": "asdddsaads"
+            "last_online": "2021-03-27 00:03:45"
         },
         {
             "name": "KimJong",
@@ -21,12 +21,12 @@
             "rank_data": {
                 "currenttier": 9,
                 "currenttierpatched": "Silver 1",
-                "ranking_in_tier": 50,
-                "mmr_change_to_last_game": 25,
-                "elo": 650,
+                "ranking_in_tier": 77,
+                "mmr_change_to_last_game": 22,
+                "elo": 677,
                 "games_needed_for_rating": 0
             },
-            "last_online": null
+            "last_online": "2021-03-27 00:03:45"
         },
         {
             "name": "EpicVipa",
@@ -35,12 +35,12 @@
             "rank_data": {
                 "currenttier": 13,
                 "currenttierpatched": "Gold 2",
-                "ranking_in_tier": 40,
-                "mmr_change_to_last_game": 20,
-                "elo": 1040,
+                "ranking_in_tier": 59,
+                "mmr_change_to_last_game": 19,
+                "elo": 1059,
                 "games_needed_for_rating": 0
             },
-            "last_online": null
+            "last_online": "2021-03-27 00:03:45"
         },
         {
             "name": "Chicken",
@@ -49,12 +49,12 @@
             "rank_data": {
                 "currenttier": 12,
                 "currenttierpatched": "Gold 1",
-                "ranking_in_tier": 0,
-                "mmr_change_to_last_game": -19,
-                "elo": 900,
+                "ranking_in_tier": 10,
+                "mmr_change_to_last_game": 23,
+                "elo": 910,
                 "games_needed_for_rating": 0
             },
-            "last_online": null
+            "last_online": "2021-03-27 00:03:45"
         },
         {
             "name": "DawnOfTheLiving",
@@ -63,19 +63,26 @@
             "rank_data": {
                 "currenttier": 9,
                 "currenttierpatched": "Silver 1",
-                "ranking_in_tier": 12,
-                "mmr_change_to_last_game": -21,
-                "elo": 612,
+                "ranking_in_tier": 37,
+                "mmr_change_to_last_game": -18,
+                "elo": 637,
                 "games_needed_for_rating": 0
             },
-            "last_online": null
+            "last_online": "2021-03-26 00:08:46"
         },
         {
             "name": "SUGAH WURM",
             "tag": "8630",
             "nickname": "SUGAH WURM#8630",
-            "rank_data": {},
-            "last_online": null
+            "rank_data": {
+                "currenttier": 12,
+                "currenttierpatched": "Gold 1",
+                "ranking_in_tier": 52,
+                "mmr_change_to_last_game": 18,
+                "elo": 952,
+                "games_needed_for_rating": 0
+            },
+            "last_online": "2021-03-26 23:24:11"
         }
     ]
 }

@@ -61,4 +61,5 @@ def update_players_info():
         return "Done."
 
 #update_players_info()
-add_player_to_list("SUGAH WURM#8630")
+#add_player_to_list("SUGAH WURM#8630")
+#update_players_info()

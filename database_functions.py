@@ -50,6 +50,7 @@ def update_players_info():
         for player in json_data['players']:
             player_id = f"{player['name']}#{player['tag']}"
             rank_data = api.get_player_rank(player_id)
+            print(rank_data)
             last_online = api.check_last_online(player_id)
             if rank_data is not None:
                 player['rank_data'] = rank_data

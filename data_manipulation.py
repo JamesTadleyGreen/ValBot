@@ -86,7 +86,7 @@ def last_to_die_test():
     with open('sample_comp_game.txt.txt') as f:
         data = json.load(f)
 
-    # for match in data['data']['matchres']:
+    # for match in data['data']['matches']:
     #     print(last_to_die(match))
     return data
 

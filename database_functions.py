@@ -52,6 +52,7 @@ def update_players_info():
             rank_data = api.get_player_rank(player_id)
             print(rank_data)
             last_online = api.check_last_online(player_id)
+            print(last_online)
             if rank_data is not None:
                 player['rank_data'] = rank_data
             if last_online is not None:
@@ -61,6 +62,6 @@ def update_players_info():
         f.write(json.dumps(json_data, indent=4))
         return "Done."
 
-#update_players_info()
+update_players_info()
 #add_player_to_list("SUGAH WURM#8630")
 #update_players_info()

@@ -74,7 +74,7 @@ def check_last_online(player):
         response = get_match_info(player).json()
     except json.decoder.JSONDecodeError:
         return None
-    metadata = response['data']['matchres'][0]['metadata']
+    metadata = response['data']['matches'][0]['metadata']
     game_start, game_length = metadata['game_start'], metadata['game_length']
     game_end = (game_start + game_length)/1000
     return datetime.fromtimestamp(game_end, timezone.utc).strftime('%Y-%m-%d %H:%M:%S')

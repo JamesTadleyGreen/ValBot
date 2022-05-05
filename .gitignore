@@ -5,3 +5,8 @@
 # Database #
 ###################
 requirements.txt
+
+
+venv
+
+tempCode*

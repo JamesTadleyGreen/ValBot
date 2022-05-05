@@ -2,87 +2,73 @@
     "players": [
         {
             "name": "Chicken",
-            "tag": "80085",
+            "tag": "CLUKY",
             "nickname": "JamOnToast",
             "rank_data": {
                 "currenttier": 14,
                 "currenttierpatched": "Gold 3",
-                "ranking_in_tier": 0,
-                "mmr_change_to_last_game": -21,
-                "elo": 1100,
+                "ranking_in_tier": 7,
+                "mmr_change_to_last_game": -16,
+                "elo": 1107,
                 "games_needed_for_rating": 0
             },
-            "last_online": "2021-04-02 16:00:46"
+            "last_online": "2022-05-05 20:01:40"
         },
         {
             "name": "KimJong",
             "tag": "42069",
             "nickname": "KimJong#42069",
             "rank_data": {
-                "currenttier": 10,
-                "currenttierpatched": "Silver 2",
-                "ranking_in_tier": 65,
-                "mmr_change_to_last_game": 24,
-                "elo": 765,
+                "currenttier": 11,
+                "currenttierpatched": "Silver 3",
+                "ranking_in_tier": 43,
+                "mmr_change_to_last_game": 23,
+                "elo": 843,
                 "games_needed_for_rating": 0
             },
-            "last_online": "2021-04-01 20:36:25"
+            "last_online": "2022-04-28 21:39:57"
         },
         {
             "name": "EpicVipa",
             "tag": "EUW",
             "nickname": "EpicVipa#EUW",
             "rank_data": {
-                "currenttier": 14,
-                "currenttierpatched": "Gold 3",
-                "ranking_in_tier": 0,
-                "mmr_change_to_last_game": -21,
-                "elo": 1100,
+                "currenttier": 15,
+                "currenttierpatched": "Platinum 1",
+                "ranking_in_tier": 5,
+                "mmr_change_to_last_game": -14,
+                "elo": 1205,
                 "games_needed_for_rating": 0
             },
-            "last_online": "2021-04-02 16:00:46"
+            "last_online": "2022-05-03 21:36:43"
         },
         {
             "name": "Chicken",
-            "tag": "7724",
-            "nickname": "Chicken#7724",
+            "tag": "9771",
+            "nickname": "Chicken#9771",
             "rank_data": {
-                "currenttier": 13,
-                "currenttierpatched": "Gold 2",
-                "ranking_in_tier": 13,
-                "mmr_change_to_last_game": 21,
-                "elo": 1013,
+                "currenttier": 14,
+                "currenttierpatched": "Gold 3",
+                "ranking_in_tier": 15,
+                "mmr_change_to_last_game": -17,
+                "elo": 1115,
                 "games_needed_for_rating": 0
             },
-            "last_online": "2021-04-02 11:31:16"
+            "last_online": "2022-05-05 20:01:40"
         },
         {
             "name": "DawnOfTheLiving",
             "tag": "EUW",
             "nickname": "DawnOfTheLiving#EUW",
             "rank_data": {
-                "currenttier": 9,
-                "currenttierpatched": "Silver 1",
-                "ranking_in_tier": 20,
-                "mmr_change_to_last_game": -17,
-                "elo": 620,
+                "currenttier": 13,
+                "currenttierpatched": "Gold 2",
+                "ranking_in_tier": 7,
+                "mmr_change_to_last_game": -18,
+                "elo": 1007,
                 "games_needed_for_rating": 0
             },
-            "last_online": "2021-04-01 17:48:58"
-        },
-        {
-            "name": "SUGAH WURM",
-            "tag": "8630",
-            "nickname": "SUGAH WURM#8630",
-            "rank_data": {
-                "currenttier": 12,
-                "currenttierpatched": "Gold 1",
-                "ranking_in_tier": 53,
-                "mmr_change_to_last_game": -19,
-                "elo": 953,
-                "games_needed_for_rating": 0
-            },
-            "last_online": "2021-04-01 17:48:58"
+            "last_online": "2022-05-03 21:36:43"
         }
     ]
 }

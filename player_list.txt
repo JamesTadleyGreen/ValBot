@@ -5,28 +5,42 @@
             "tag": "CLUKY",
             "nickname": "JamOnToast",
             "rank_data": {
-                "currenttier": 14,
-                "currenttierpatched": "Gold 3",
-                "ranking_in_tier": 7,
-                "mmr_change_to_last_game": -16,
-                "elo": 1107,
-                "games_needed_for_rating": 0
+                "currenttier": 17,
+                "currenttierpatched": "Platinum 3",
+                "images": {
+                    "small": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/17/smallicon.png",
+                    "large": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/17/largeicon.png",
+                    "triangle_down": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/17/ranktriangledownicon.png",
+                    "triangle_up": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/17/ranktriangleupicon.png"
+                },
+                "ranking_in_tier": 24,
+                "mmr_change_to_last_game": 14,
+                "elo": 1424,
+                "games_needed_for_rating": 0,
+                "old": false
             },
-            "last_online": "2022-05-05 20:01:40"
+            "last_online": "2023-03-20 22:21:16"
         },
         {
             "name": "KimJong",
             "tag": "42069",
             "nickname": "KimJong#42069",
             "rank_data": {
-                "currenttier": 11,
-                "currenttierpatched": "Silver 3",
-                "ranking_in_tier": 43,
-                "mmr_change_to_last_game": 23,
-                "elo": 843,
-                "games_needed_for_rating": 0
+                "currenttier": 9,
+                "currenttierpatched": "Silver 1",
+                "images": {
+                    "small": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/9/smallicon.png",
+                    "large": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/9/largeicon.png",
+                    "triangle_down": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/9/ranktriangledownicon.png",
+                    "triangle_up": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/9/ranktriangleupicon.png"
+                },
+                "ranking_in_tier": 38,
+                "mmr_change_to_last_game": 18,
+                "elo": 638,
+                "games_needed_for_rating": 0,
+                "old": false
             },
-            "last_online": "2022-04-28 21:39:57"
+            "last_online": "2023-03-14 22:48:52"
         },
         {
             "name": "EpicVipa",
@@ -35,12 +49,19 @@
             "rank_data": {
                 "currenttier": 15,
                 "currenttierpatched": "Platinum 1",
-                "ranking_in_tier": 5,
-                "mmr_change_to_last_game": -14,
-                "elo": 1205,
-                "games_needed_for_rating": 0
+                "images": {
+                    "small": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/15/smallicon.png",
+                    "large": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/15/largeicon.png",
+                    "triangle_down": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/15/ranktriangledownicon.png",
+                    "triangle_up": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/15/ranktriangleupicon.png"
+                },
+                "ranking_in_tier": 36,
+                "mmr_change_to_last_game": 16,
+                "elo": 1236,
+                "games_needed_for_rating": 0,
+                "old": false
             },
-            "last_online": "2022-05-03 21:36:43"
+            "last_online": "2023-03-20 22:21:16"
         },
         {
             "name": "Chicken",
@@ -49,26 +70,40 @@
             "rank_data": {
                 "currenttier": 14,
                 "currenttierpatched": "Gold 3",
-                "ranking_in_tier": 15,
-                "mmr_change_to_last_game": -17,
-                "elo": 1115,
-                "games_needed_for_rating": 0
+                "images": {
+                    "small": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/14/smallicon.png",
+                    "large": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/14/largeicon.png",
+                    "triangle_down": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/14/ranktriangledownicon.png",
+                    "triangle_up": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/14/ranktriangleupicon.png"
+                },
+                "ranking_in_tier": 47,
+                "mmr_change_to_last_game": 16,
+                "elo": 1147,
+                "games_needed_for_rating": 0,
+                "old": false
             },
-            "last_online": "2022-05-05 20:01:40"
+            "last_online": "2023-03-20 22:21:16"
         },
         {
             "name": "DawnOfTheLiving",
             "tag": "EUW",
             "nickname": "DawnOfTheLiving#EUW",
             "rank_data": {
-                "currenttier": 13,
-                "currenttierpatched": "Gold 2",
-                "ranking_in_tier": 7,
-                "mmr_change_to_last_game": -18,
-                "elo": 1007,
-                "games_needed_for_rating": 0
+                "currenttier": 14,
+                "currenttierpatched": "Gold 3",
+                "images": {
+                    "small": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/14/smallicon.png",
+                    "large": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/14/largeicon.png",
+                    "triangle_down": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/14/ranktriangledownicon.png",
+                    "triangle_up": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/14/ranktriangleupicon.png"
+                },
+                "ranking_in_tier": 76,
+                "mmr_change_to_last_game": 14,
+                "elo": 1176,
+                "games_needed_for_rating": 0,
+                "old": false
             },
-            "last_online": "2022-05-03 21:36:43"
+            "last_online": "2023-03-20 22:21:16"
         }
     ]
 }

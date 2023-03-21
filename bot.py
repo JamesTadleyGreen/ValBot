@@ -7,6 +7,7 @@ import discord
 import api
 import data_manipulation as dm
 import database_functions as df
+import graph
 import json
 
 
@@ -19,7 +20,8 @@ load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
 
 # 2
-bot = commands.Bot(command_prefix="|")
+intents = discord.Intents.default()
+bot = commands.Bot(intents=intents, command_prefix="|")
 
 
 # Strats generator
@@ -171,6 +173,21 @@ async def strat(ctx, map: str = None, side: str = None, selection=selection):
 async def print_strats(ctx):
     strats_string = json.dumps(strats)
     await ctx.send(strats_string)
+
+
+@bot.command(
+    name="graph",
+    help="Prints a graph",
+)
+async def get_graph(ctx, player, dependent, is_cum="false", is_isolate="false"):
+    cum = True if is_cum == "true" else False
+    isolate = True if is_isolate == "true" else False
+    data = api.graph_data(player, dependent, cum, isolate)
+    graph.create_graph(dependent, data)
+    await ctx.send(file=discord.File("graph.png"))
+
+
+graph.create_graph("asd", api.graph_data("CHICKEN#9771", "bodyshots", "true", "true"))
 
 
 @bot.event

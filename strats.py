@@ -18,6 +18,7 @@ strats = {
         "**One clip wonder**: *No reloading, if you reload you must drop your weapon and pick up another*",
         "**Single You**: *No-one can press* **w**",
         "**Stuck in the mud** :poop:: *When a player gets a kill they must remain in place, until another player comes to take their place*",
+        "**No crosshair**: *Turn your crosshair off*",
     ],
     "bind": [
         "Use teleporters 5 times as a team com**bin**e**d**",
@@ -31,7 +32,7 @@ strats = {
     "breeze": ["all trapdoor"],
     "attack": [
         "Mr President :tie:",
-        "The Fakeout: *Use ALL you util on one site, then attack another*",
+        "The Fakeout: *Use ALL your util on one site, then attack another*",
     ],
     "defense": [
         "**Gambling** :dollar::dollar::dollar:: *All one site*",

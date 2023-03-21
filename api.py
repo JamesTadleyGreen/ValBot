@@ -1,4 +1,5 @@
 # Using https://github.com/Henrik-3/unofficial-valorant-api
+from typing import Tuple
 import requests
 from requests.exceptions import HTTPError
 import json
@@ -88,13 +89,46 @@ def check_last_online(player):
     return datetime.fromtimestamp(game_end, timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
 
 
-print(check_last_online("CHICKEN#CLUKY"))
-
-
 def DEV_output_to_file(func, file, player):
     with open(f"{file}.txt", "w") as f:
         f.write(json.dumps(func(player).json(), indent=4))
 
+
+def graph_data(
+    player_name: str, dependent: str, cum: bool, isolate: bool
+) -> list[Tuple[list[float], list[float]]]:
+    keys = dependent.split("/")
+    match_info = get_match_info(player_name).json()["data"][0]
+    output = {
+        player["puuid"]: ([], []) for player in match_info["players"]["all_players"]
+    }
+    rounds = match_info["rounds"]
+    for i, round in enumerate(rounds):
+        player_stats = round["player_stats"]
+        for player in player_stats:
+            if isolate and player_name != player["player_display_name"]:
+                continue
+            player_id = player["player_puuid"]
+            for key in keys:
+                x = i
+                y = (
+                    player[key] + output[player_id][1][-1]
+                    if (cum and len(output[player_id][1]) > 0)
+                    else player[key]
+                )
+                output[player_id][0].append(x)
+                output[player_id][1].append(y)
+    return {
+        [
+            f'{player["name"]} - {player["character"]}'
+            for player in match_info["players"]["all_players"]
+            if player["puuid"] == pid
+        ][0]: output[pid]
+        for pid in output
+    }
+
+
+print(graph_data("CHICKEN#9771", "legshots", cum=True, isolate=True))
 
 # FAILSAFE
 # old_player_list = ["Chicken#80085", "KimJong#42069", "EpicVipa#EUW", "Chicken#7724", "DawnOfTheLiving#EUW"]

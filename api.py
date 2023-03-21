@@ -128,7 +128,7 @@ def graph_data(
     }
 
 
-print(graph_data("CHICKEN#9771", "legshots", cum=True, isolate=True))
+# print(graph_data("CHICKEN#9771", "legshots", cum=True, isolate=True))
 
 # FAILSAFE
 # old_player_list = ["Chicken#80085", "KimJong#42069", "EpicVipa#EUW", "Chicken#7724", "DawnOfTheLiving#EUW"]
